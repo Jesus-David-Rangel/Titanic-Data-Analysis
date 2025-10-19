@@ -1,4 +1,4 @@
-# Identificación de Factores de Supervivencia en la Tragedia del RMS Titanic
+### Identificación de Factores de Supervivencia en la Tragedia del RMS Titanic
 
 **Descripción del Proyecto:**
 
@@ -12,7 +12,7 @@ En conclusión, las características demográficas y socioeconómicas simples ex
 
 ---
 
-# Identification of Survival Factors in the RMS Titanic Tragedy
+### Identification of Survival Factors in the RMS Titanic Tragedy
 
 **Project Description:**
 
