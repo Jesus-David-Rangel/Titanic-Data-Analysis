@@ -1,34 +1,25 @@
-# Resumen del Análisis de Datos del Titanic
+# Identificación de Factores de Supervivencia en la Tragedia del RMS Titanic
 
-Este repositorio contiene un notebook dedicado al análisis de los datos del famoso desastre marítimo del Titanic. El objetivo principal es explorar, visualizar y modelar los datos para entender mejor los factores que influyeron en la supervivencia de los pasajeros.
+**Descripción del Proyecto:**
 
-## Contenido del Notebook
+Este proyecto realiza un análisis exploratorio y predictivo sobre el conjunto de datos del Titanic, con el objetivo de identificar los principales factores que influyeron en la supervivencia de los pasajeros y construir modelos de predicción básicos. El proceso incluye la limpieza e imputación de datos, la ingeniería de características (como la extracción de títulos, el tamaño de familia y la variable “is_alone”), la visualización de patrones relevantes y la evaluación de modelos como Regresión Logística, Bosque Aleatorio y métodos de ensamble.
 
-- **Carga y Exploración de Datos:** Se importan los datos originales y se realiza un análisis exploratorio para identificar características importantes como edad, clase, género y tarifa.
-- **Limpieza de Datos:** Se tratan valores faltantes, se convierten variables categóricas y se preparan los datos para el análisis.
-- **Visualización:** Se utilizan gráficos para visualizar la distribución de variables y relaciones entre ellas, como la tasa de supervivencia por género o clase.
-- **Modelado:** Se aplican modelos de machine learning, como regresión logística, para predecir la supervivencia de los pasajeros.
-- **Conclusiones:** El notebook incluye un resumen de los hallazgos más relevantes y las variables que más impactan en la probabilidad de supervivencia.
+El análisis reveló que el sexo fue la variable más influyente, ya que las mujeres presentaron una probabilidad de supervivencia significativamente mayor que los hombres. La clase del billete también mostró una fuerte correlación con la supervivencia, donde los pasajeros de primera clase sobrevivieron con más frecuencia que los de segunda y tercera clase. La edad desempeñó un papel importante: los niños y adultos jóvenes tendieron a sobrevivir más, especialmente en combinación con el género y la clase social. Además, el tamaño de la familia presentó una relación no lineal: las familias pequeñas (de dos a cuatro miembros) obtuvieron mejores resultados que las muy grandes o los pasajeros que viajaban solos.
 
-## Resultados y Conclusiones
+Asimismo, se observó que las tarifas más altas se asociaron con una mayor probabilidad de supervivencia, reflejando diferencias socioeconómicas entre los pasajeros. Los títulos extraídos de los nombres (como Mr, Mrs o Miss) y el puerto de embarque también aportaron información predictiva relevante. Tras la ingeniería de características, el modelo de Bosque Aleatorio alcanzó una precisión cercana al 80 % en la fase de validación, siendo las variables más importantes el sexo, la clase, la tarifa, la edad y el título.
 
-El análisis reveló varios hallazgos clave:
-- **El género y la clase social fueron los factores más determinantes en la supervivencia.** Las mujeres y los pasajeros de primera clase tuvieron una mayor probabilidad de sobrevivir.
-- **La edad también influyó:** los niños tenían una tasa de supervivencia relativamente alta.
-- **El precio del boleto y el embarque** mostraron ciertas correlaciones con la supervivencia, aunque menos marcadas que el género y la clase.
-- Los modelos predictivos lograron identificar correctamente la mayoría de los casos de supervivencia utilizando estas variables.
+En conclusión, las características demográficas y socioeconómicas simples explican gran parte de la variación en la supervivencia. La ingeniería de variables, especialmente la relacionada con los títulos y el tamaño de la familia, mejora significativamente la capacidad predictiva y la interpretación de los modelos.
 
-## Uso
+---
 
-1. Clona el repositorio.
-2. Abre el notebook en Jupyter Notebook o Google Colab.
-3. Ejecuta las celdas para reproducir el análisis y modificarlo según tus necesidades.
+# Identification of Survival Factors in the RMS Titanic Tragedy
 
-## Requisitos
+**Project Description:**
 
-- Python 3.x
-- Bibliotecas: pandas, numpy, matplotlib, seaborn, scikit-learn
+This project performs exploratory and predictive analysis on the Titanic dataset with the aim of identifying the main factors that influenced passenger survival and building simple predictive models. The process includes data cleaning and imputation, feature engineering (such as title extraction, family size, and the “is_alone” variable), visualization of relevant patterns, and evaluation of models including Logistic Regression, Random Forest, and ensemble approaches.
 
-## Créditos
+The analysis revealed that sex was the most influential variable, as women had a significantly higher probability of survival than men. Ticket class also showed a strong correlation with survival, with first-class passengers surviving more frequently than those in second and third class. Age played a key role: children and young adults tended to survive more, especially in combination with gender and class. Family size displayed a non-linear relationship with survival, as small families (two to four members) achieved better outcomes than very large families or solo travelers.
 
-Este proyecto es realizado con fines educativos y de práctica en análisis de datos y machine learning utilizando el dataset del Titanic, ampliamente utilizado en la comunidad de ciencia de datos.
+Higher fares were associated with increased survival, reflecting socio-economic advantages. Extracted name titles (Mr, Mrs, Miss, etc.) and port of embarkation also provided additional predictive power. After feature engineering, the Random Forest model achieved validation accuracy close to 80%, with the most relevant features being sex, class, fare, age, and title.
+
+In conclusion, simple demographic and socio-economic characteristics explain most of the variation in survival. Feature engineering, particularly involving titles and family structure, significantly enhances both the predictive performance and interpretability of the models.
